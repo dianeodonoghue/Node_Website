@@ -10,6 +10,6 @@ module.exports = {
 
     // Your email to receive notification (receiver)  
     from: process.env.SMTP_USER, // Sender email address
-    to: process.env.TO_EMAIL, // Your email address
+    to: process.env.TO_EMAIL, // Receiver email address
     subject: 'Contact Us', // Subject
 };

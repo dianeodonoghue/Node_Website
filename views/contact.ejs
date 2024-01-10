@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+ <!-- Meta Tag -->
+ <meta charset="utf-8">
+ <meta name="description" content="Contact Form">
+
+
+ <!-- Title -->
+ <title>Contact Us</title>
+
+ <!-- Font -->
+ <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+
+</head>
+<body>
+<% include partials/menu %>
+
+<div class="container">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="column left-column">
+      
+      <!-- Contact Form Title -->
+      <div class="tittle-container text-center">
+          <h2 class="tittle">Get in Touch</h2>
+          <h4 class="subtitle">We'd love hear from you</h4>
+      </div>
+
+      <!-- Form -->
+      <form class="contact-form" method="POST" action="send">
+        <%- msg %>
+        <!-- Name -->
+              <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Your Name</label>
+                  <div class="col-sm-8">
+                      <input type="text" name="name" class="form-control form-control-sm">
+                  </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Email Adress</label>
+                  <div class="col-sm-8">
+                      <input type="email" name="email" class="form-control form-control-sm">
+                  </div>
+              </div>
+              
+              <!-- Message -->
+              <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Message</label>
+                  <div class="col-sm-8">
+                      <textarea class="form-control form-control-sm" name="message" rows="5" required></textarea>
+                  </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-right">
+                  <input class="btn btn-submit" type="submit" value="Submit">
+              </div>
+
+      </form>
+    </div>
+    <!-- End Left Coloumn -->
+
+
+    <!-- Company Info -->
+    <!-- Right Column -->
+    <div class="col-sm-6 right-column">
+        <div class="contact-info">
+        <h3>Contact Info</h3>
+              <p><i class="fa fa-map-marker"></i>&nbsp; Park Road Rhebogue Limerick</p>
+            <p><i class="fa fa-phone"></i>&nbsp; 061415229</p>
+            <p><i class="fa fa-envelope"></i>&nbsp; info@limerickfruit.ie</p>
+        </div>
+
+    <!-- Social Icons -->
+    <div class="social">
+      <div class="text-center center-block">
+          <a href="http://limerickfruit.ie/"><i class="icon fa fa-facebook"></i></a>
+      </div>
+    </div>
+    </div>
+    <!-- Right Column -->
+  </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+<% include partials/script %>
+</html>
